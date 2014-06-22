@@ -18,7 +18,7 @@ def getwordcounts(url):
 
 def getwords(html):
     txt=re.compile(r'<[^>]+>').sub('',html)
-    words=re.compile(r'^A-Z^a-z').split(txt)
+    words=re.compile(r'[^A-Za-z]+').split(txt)
     return [word.lower() for word in words if word!='']
 
 

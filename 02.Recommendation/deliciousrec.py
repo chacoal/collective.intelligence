@@ -33,4 +33,3 @@ def fillItems(user_dict):
         for item in all_items:
             if item not in ratings:
                 ratings[item]=0.0
-

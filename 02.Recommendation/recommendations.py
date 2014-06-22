@@ -105,16 +105,18 @@ def getRecommendations(prefs, person, similarity=sim_pearson):
 
     rankings=[(total/simSums[item], item) for item, total in totals.items()]
 
-    rankings.sort()
-    rankings.reverse()
-    return rankings
+    return sorted(rankings, reverse=True)
+
+def _pair(prefs):
+    for person in prefs:
+        for item in prefs[person]:
+            yield person, item
 
 def transformPrefs(prefs):
     result={}
-    for person in prefs:
-        for item in prefs[person]:
-            result.setdefault(item, {})
-            result[item][person]=prefs[person][item]
+    for person, item in _pair(prefs):
+        result.setdefault(item, {})
+        result[item][person]=prefs[person][item]
     return result
 
 def calculateSimilarItems(prefs, n=10):
