@@ -1,0 +1,32 @@
+feed
+  subtitle
+A Podcast by Tatsuhiko Miyagawa. Talking about Tech, Software Development and Gadgets.
+   A Podcast by Tatsuhiko Miyagawa. Talking about Tech, Software Development and Gadgets.
+  links
+     href
+http://rebuild.fm
+         http://rebuild.fm
+     type
+text/html
+         text/html
+     rel
+alternate
+         alternate
+     href
+http://feeds.rebuild.fm/rebuildfm
+         http://feeds.rebuild.fm/rebuildfm
+     type
+application/rss+xml
+         application/rss+xml
+     rel
+self
+         self
+  image
+   href
+http://rebuild.fm/images/icon1400.jpg
+     http://rebuild.fm/images/icon1400.jpg
+  href
+null
+
+   
+  summary
